@@ -1,20 +1,4 @@
-interface PhoneNumberDictionary {
-  [phone: string]: {
-    num: number;
-  };
-}
-
-interface Contact {
-  name: string;
-  address: string;
-  phones: PhoneNumberDictionary;
-}
-
-enum PhoneTypePlace {
-  Home = 'home',
-  Office = 'office',
-  Studio = 'studio',
-}
+import { Contact, PhoneTypePlace } from './addressTypes';
 
 // api
 // Promise의 반환값 정의
